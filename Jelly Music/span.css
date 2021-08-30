@@ -1,0 +1,68 @@
+.div{
+	/*display: inline-block;*/
+	background-color:aquamarine;
+	width:100px;
+	height:100px;
+	position:absolute;
+	top:20%;
+	left:20%;
+	animation-name:changeshape ;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	animation-direction:  alternate;
+
+}
+@keyframes changeshape{
+  from{
+   transform:rotate(120deg);
+  }
+  25%{
+  	transform:rotate(150deg);
+  }
+  50%{
+  	transform:rotate(180deg);
+  }
+  75%{
+  	transform:rotate(270deg);
+  }
+
+  to{
+   transform:rotate(360deg);
+  }
+}
+/*@keyframes changeshape_rev{
+  from{
+   transform:rotate(-120deg);
+  }
+  25%{
+  	transform:rotate(-150deg);
+  }
+  50%{
+  	transform:rotate(-180deg);
+  }
+  75%{
+  	transform:rotate(-270deg);
+  }
+
+  to{
+   transform:rotate(-360deg);
+  }
+}
+/*@keyframes changeshape{
+  from{
+   transform:translateY(-100px);
+  }
+  25%{
+  	transform:translateY(0px);
+  }
+  50%{
+  	transform:translateY(-50px);
+  }
+  75%{
+  	transform:translateY(0px);
+  }
+
+  to{
+   transform:translateY(0px);
+  }
+}*/
